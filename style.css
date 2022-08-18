@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: #10454F;
+    padding: 16px 0;
+    color: #BDE038;
+}
+
+header.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1 {
+    padding: 0 0 10px 0;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header ul li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header li a {
+    color: #A3AB78;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artigos article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2, .artigos article {
+    margin-bottom: 16px;
+}
+
+.artigos article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.artigos article a {
+    background-color: #818274;
+    color: #506266;
+    padding: 8px;
+    display: inline-block;
+}
+
+.artigos article p, .artigos article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.artigos article h3 {
+    font-size: 24px;
+}
+
+.artigos article a {
+    background-color: #A3AB78;
+    color: #10454F;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.artigos article a:hover {
+    text-decoration: underline;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#musica {
+    background-color: #BDE038;
+}
+
+#musica .artigos article a {
+    background-color: #818274;
+}
+
+#filmesseries {
+    background-color: #818274;
+}
+
+#filmesseries .artigos article a {
+    background-color: #BDE038;
+}
+
+#streaming {
+    background-color: #10454F;
+}
+
+#straming .artigos article a {
+    background-color: #A3AB78;
+}
+
+#copy {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
