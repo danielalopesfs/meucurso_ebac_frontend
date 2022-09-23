@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de notícias/Menu Dropdown - EBAC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EBAC - News</h1>
+            <form>
+                <input type="search" placeholder="Faça sua pesquisa no site">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Abrir menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Harry Potter
+                    <ul class="submenu">
+                        <li>
+                            <a href="">Filmes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    As Crônicas de Gelo e Fogo
+                    <ul class="submenu">
+                        <li>
+                            <a href="">Série HBO</a>
+                        </li>
+                    </ul> 
+                </li>
+                <li>
+                    House Of the Dragon
+                    <ul class="submenu">
+                        <li>
+                            <a href="">Série HBOmax</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Em destaque</h2>
+                <article class="news">
+                    <a href="">
+                        <img src="https://via.placeholder.com/320x320ox">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </a>
+                </article>
+            </section>
+            <section>
+                <h2>Últimas notícias</h2>
+                <div class="noticias">
+                    <article class="news">
+                        <a href="">
+                            <img src="https://via.placeholder.com/320x320ox">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </a>
+                    </article>
+                    <article class="news">
+                        <a href="">
+                            <img src="https://via.placeholder.com/320x320ox">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </a>
+                    </article>
+                    <article class="news">
+                        <a href="">
+                            <img src="https://via.placeholder.com/320x320ox">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section class="novidades">
+                <h2>Novidades</h2>
+                <article class="news">
+                    <a href="">
+                        <img src="https://via.placeholder.com/320x320ox">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </a>
+                </article>
+                <article class="news">
+                    <a href="">
+                        <img src="https://via.placeholder.com/320x320ox">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </a>
+                </article>
+                <article class="news">
+                    <a href="">
+                        <img src="https://via.placeholder.com/320x320ox">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </a>
+                </article>
+            </section>
+        </aside>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>    
+</body>
+</html>
